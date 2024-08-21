@@ -60,14 +60,20 @@
         <h2>Contact</h2>
         <p>Check out my <a href="https://www.linkedin.com/in/michael-squeri" target="_blank">LinkedIn</a> to learn more about me! <br><br>
         <p>Message me to get in touch! </p> <br>
-        <form action="https://formspree.io/f/xzzpjgeo" method="POST">
-        <label> Your email: <input type="email" name="email"> </label> <br> <br>
-        <label> Your message: <textarea name="message"> </textarea> </label>
-        <!-- additional form fields? If I want later -->
-        <button type="submit">Send</button>
-        </form>
-        <!-- <p>Thanks for your message!</p> -->
 
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
+        action="https://formspree.io/f/xzzpjgeo" method="POST">
+            <fieldset id="fs-frm-inputs">
+                <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your Name" required="">
+                <label for="email-address">Email Address</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="your-email@domain.tld" required="">
+                <label for="message">Your Message</label>
+                    <textarea rows="5" name="message" id="message" placeholder="lorem ipsum." required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+          </fieldset>
+          <input type="submit" value="Send">
+        </form>
     </section>
     
     <footer>
