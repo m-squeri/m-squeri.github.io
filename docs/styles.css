@@ -53,11 +53,7 @@ section {
 }
 
 .project a {
-    color: #ff8906;
-    text-decoration: none;
-}
-
-.project a:hover {
+    color: #0000FF;
     text-decoration: underline;
 }
 
@@ -124,14 +120,6 @@ ul {
     padding-left: 20px;
 }
 
-ul.custom-bullet-points {
+.custom-bullet-points {
     list-style-type: square;
-}
-
-ul.custom-bullet-points li {
-    color: #007bff;
-}
-
-ul.custom-bullet-points li::marker {
-    color: #ff5733;
 }
